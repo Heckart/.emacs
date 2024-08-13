@@ -37,8 +37,6 @@
 (setq doom-modeline-display-misc-in-all-mode-lines t)
 (setq doom-modeline-env-version t)
 
-(setq display-line-numbers 'relative)
-
 (setq package-selected-packages '(lsp-mode lsp-ui yasnippet lsp-treemacs helm-lsp
 					   projectile hydra flycheck company avy which-key helm-xref dap-mode ccls
 					   doom-modeline evil flycheck-rust good-scroll lsp-pyright modus-themes))
@@ -127,7 +125,7 @@
 (evil-mode 1)
 
 (global-display-line-numbers-mode t)
-(setq display-line-numbers-type 'absolute)
+(setq display-line-numbers-type 'relative)
 (dolist (mode '(org-mode-hook
 		dired-mode-hook
 		eshell-mode-hook
