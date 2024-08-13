@@ -40,7 +40,8 @@
 (setq display-line-numbers 'relative)
 
 (setq package-selected-packages '(lsp-mode lsp-ui yasnippet lsp-treemacs helm-lsp
-    projectile hydra flycheck company avy which-key helm-xref dap-mode))
+					   projectile hydra flycheck company avy which-key helm-xref dap-mode ccls
+					   doom-modeline evil flycheck-rust good-scroll lsp-pyright modus-themes))
 
 (when (cl-find-if-not #'package-installed-p package-selected-packages)
   (package-refresh-contents)
